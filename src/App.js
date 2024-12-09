@@ -32,31 +32,19 @@ function App() {
 
 
       <div className="cards">
-        
-        {/* <article>
-          <h2>Mohammed Salih</h2>
-          <p>lorem</p>
-        </article>
+        {console.log("this is working")}
+        {cards.map((singelCard, index) =>{
+          return(
+            <article key={index}>
 
-        <article>
-          <h2>Bill Gates</h2>
-          <p>lorem</p>
-        </article>
+              <h2>{singelCard.name}</h2>
+              <p>{singelCard.bio}</p>
+            </article>
+          )
+        })}
 
-        <article>
-          <h2>Roronoa Zoro</h2>
-          <p>lorem</p>
-        </article>
 
-        <article>
-          <h2>Monkey D. Lufyy </h2>
-          <p>lorem</p>
-        </article>
 
-        <article>
-          <h2>Sosuke Aizen</h2>
-          <p>lorem</p>
-        </article> */}
       </div>
     </div>
   );
